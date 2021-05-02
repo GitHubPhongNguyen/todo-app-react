@@ -1,0 +1,34 @@
+.todoItem{
+    padding: 20px 16px;
+    min-width: 400px;
+    font-family: Arial;
+    font-weight: 300;
+    size: 24px;
+    color: #c4c4c4;
+    cursor: pointer;
+    /* If you want to implement it in very old browser-versions */
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* The rule below is not implemented in browsers yet */
+    -o-user-select: none;
+
+    /* The rule below is implemented in most browsers by now */
+    user-select: none;
+    display: flex;
+}
+
+.todoItem>p{
+    margin: 0;
+}
+
+.todoItem box-icon{
+    margin-right: 8px;
+    align-self: flex-end;
+}
+
+.todoItem-complete > p{
+    text-decoration: line-through;
+    opacity: 0.3;
+}

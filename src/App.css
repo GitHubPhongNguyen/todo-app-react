@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.box-input{
+  display: flex;
+  min-width: 400px;
+  padding: 20px 16px;
+}
+
+.box-input box-icon{
+  margin-right: 8px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.box-input input{
+  width: 100%;
+  padding: 16px 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+.box-input input:focus{
+  border: none;
+  outline: none;
+}
+
+.box-input input::placeholder{
+  color: #C4c4c4;
+  font-style: italic;
+  opacity: 0.3;
+}
